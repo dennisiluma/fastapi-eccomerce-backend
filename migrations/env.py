@@ -10,6 +10,14 @@ from alembic import context
 from app.core.config import settings
 from app.models.base import Base
 
+
+# FOR MYSQL USERS ADD THIS BELOW to help remove the string characters length error
+# @compiles(String, "mysql")
+# def compile_string_mysql(element, compiler, **kw):
+#     if element.length is None:
+#         element.length = 255
+#     return compiler.visit_VARCHAR(element, **kw)
+
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
