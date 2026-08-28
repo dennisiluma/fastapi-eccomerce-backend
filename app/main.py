@@ -36,7 +36,7 @@ app = FastAPI(title="Shopease", version="0.1.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:4200"],
+    allow_origins=["http://localhost:3000", "*", "http://deploy-shopease923.s3-website.eu-north-1.amazonaws.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
