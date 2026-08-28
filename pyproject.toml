@@ -1,0 +1,27 @@
+[project]
+name = "fastapi-eccomerce-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiosmtplib>=5.1.2",
+    "alembic>=1.19.1",
+    "asyncmy>=0.2.13",
+    "asyncpg>=0.31.0",
+    "authlib>=1.7.2",
+    "boto3>=1.43.69",
+    "email-validator>=2.3.0",
+    "fastapi>=0.141.1",
+    "greenlet>=3.5.5",
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "passlib[argon2]>=1.7.4",
+    "pwdlib[argon2]>=0.3.0",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.13.0",
+    "python-multipart>=0.0.32",
+    "sqlalchemy>=2.0.52",
+    "stripe>=15.5.0",
+    "uvicorn>=0.52.1",
+]
