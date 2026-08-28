@@ -13,7 +13,7 @@ from app.core.exceptions import ApiException, api_exception_handler
 async def lifespan(app: FastAPI):
 
     # --- Startup Logic ---
-    print("🔄 Attempting to connect to DB...")
+    print("🔄 Attempting to connect to DB alright...")
     try:
         async with engine.begin() as conn:
             await conn.execute(text("SELECT 1"))
